@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bob Esponja — Fenda do Biquíni</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><circle cx=%2250%22 cy=%2250%22 r=%2248%22 fill=%22%23ffe600%22/><circle cx=%2335%22 cy=%2340%22 r=%228%22 fill=%22000%22/><circle cx=%2365%22 cy=%2340%22 r=%228%22 fill=%22000%22/><path d=%22M25 65c18 15 32 15 50 0%22 stroke=%22000%22 stroke-width=%226%22 fill=%22none%22/></svg>">
+  <meta name="description" content="Site temático do Bob Esponja: personagens, curiosidades, galeria e muito mais — com recursos de acessibilidade." />
+</head>
+<body>
+  <!-- Link para leitores de tela/teclado -->
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+  <header class="topbar" role="banner">
+    <div class="container topbar__inner">
+      <h1 class="logo" aria-label="Bob Esponja — Fenda do Biquíni">
+        <span aria-hidden="true">🧽</span> Bob Esponja
+      </h1>
+      <nav aria-label="Navegação principal">
+        <ul class="nav">
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#personagens">Personagens</a></li>
+          <li><a href="#curiosidades">Curiosidades</a></li>
+          <li><a href="#galeria">Galeria</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <!-- HERO -->
+    <section id="inicio" class="hero" aria-labelledby="titulo-hero">
+      <div class="container hero__grid">
+        <div>
+          <h2 id="titulo-hero">Bem-vindo(a) à Fenda do Biquíni!</h2>
+          <p>
+            Mergulhe no universo do <strong>Bob Esponja Calça Quadrada</strong>, seu melhor amigo
+            <strong>Patrick</strong>, o ranzinza <strong>Lula Molusco</strong> e toda a turma.
+          </p>
+          <a class="btn" href="#personagens">Conhecer a turma</a>
+        </div>
+        <!-- Ilustração em SVG acessível -->
+        <figure class="hero__art" aria-label="Ilustração do fundo do mar com bolhas e uma casinha de abacaxi">
+            <img src="Bob_Esponja.webp"
+          svg viewBox="0 0 320 220" role="img" aria-hidden="true">
+            <defs>
+              <linearGradient id="g" x1="0" x2="0" y1="0" y2="1">
+                <stop offset="0%" stop-color="#8be9fd"/>
+                <stop offset="100%" stop-color="#1fb6ff"/>
+              </linearGradient>
+            </defs>
+            <rect width="320" height="220" fill="url(#g)"/>
+            <circle cx="50" cy="40" r="8" fill="#ffffff" opacity="0.7"/>
+            <circle cx="90" cy="70" r="5" fill="#ffffff" opacity="0.7"/>
+            <circle cx="130" cy="30" r="6" fill="#ffffff" opacity="0.7"/>
+            <rect x="210" y="110" width="40" height="70" rx="8" fill="#ffb703"/>
+            <polygon points="210,110 250,110 230,85" fill="#fd9e02"/>
+            <rect x="225" y="140" width="10" height="15" fill="#3a0ca3"/>
+          </svg>
+        </figure>
+      </div>
+    </section>
+
+    <!-- PERSONAGENS -->
+    <section id="personagens" class="section" aria-labelledby="titulo-personagens">
+      <div class="container">
+        <h2 id="titulo-personagens">Personagens</h2>
+        <p class="section__lead">
+          Conheça os moradores mais famosos da Fenda do Biquíni.
+        </p>
+        <div class="grid cards">
+          <article class="card" tabindex="0" aria-labelledby="p-bob">
+            <h3 id="p-bob">Bob Esponja</h3>
+            <p>Cozinheiro do Siri Cascudo, otimista e pronto para aventuras com a melhor energia.</p>
+            <ul class="tags" aria-label="Características">
+              <li>Engraçado</li><li>Trabalhador</li><li>Amigo</li>
+            </ul>
+          </article>
+
+          <article class="card" tabindex="0" aria-labelledby="p-patrick">
+            <h3 id="p-patrick">Patrick Estrela</h3>
+            <p>Melhor amigo do Bob. Ingênuo, leal e criativo do jeitinho dele.</p>
+            <ul class="tags"><li>Leal</li><li>Fofo</li><li>Sonhador</li></ul>
+          </article>
+
+          <article class="card" tabindex="0" aria-labelledby="p-lula">
+            <h3 id="p-lula">Lula Molusco</h3>
+            <p>Vizinho de Bob e Patrick. Ama clarinete e paz (de preferência, sem vizinhos).</p>
+            <ul class="tags"><li>Artista</li><li>Ranzinza</li><li>Chique</li></ul>
+          </article>
+
+          <article class="card" tabindex="0" aria-labelledby="p-sandy">
+            <h3 id="p-sandy">Sandy Bochechas</h3>
+            <p>Esquilo cientista do Texas, gênio da engenharia submarina.</p>
+            <ul class="tags"><li>Corajosa</li><li>Geek</li><li>Forte</li></ul>
+          </article>
+
+          <article class="card" tabindex="0" aria-labelledby="p-sr">
+            <h3 id="p-sr">Sr. Siriguejo</h3>
+            <p>Dono do Siri Cascudo. Ama lucro, segredos e… lucro de novo.</p>
+            <ul class="tags"><li>Empreendedor</li><li>Astuto</li><li>Clássico</li></ul>
+          </article>
+
+          <article class="card" tabindex="0" aria-labelledby="p-plankton">
+            <h3 id="p-plankton">Plankton</h3>
+            <p>Vilão querido que quer roubar a fórmula do hambúrguer de siri (um dia ele consegue!).</p>
+            <ul class="tags"><li>Persistente</li><li>Genial</li><li>Dramático</li></ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CURIOSIDADES -->
+    <section id="curiosidades" class="section section--alt" aria-labelledby="titulo-curiosidades">
+      <div class="container">
+        <h2 id="titulo-curiosidades">Curiosidades</h2>
+        <ul class="list">
+          <li>O criador, Stephen Hillenburg, era biólogo marinho e professor de arte.</li>
+          <li>O primeiro episódio foi ao ar em 1º de maio de 1999.</li>
+          <li>O design do Bob foi inspirado em uma esponja de cozinha — com muito carisma.</li>
+          <li>“Siri Cascudo” em inglês é “Krusty Krab”.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- GALERIA (decorativa acessível) -->
+    <section id="galeria" class="section" aria-labelledby="titulo-galeria">
+      <div class="container">
+        <h2 id="titulo-galeria">Galeria</h2>
+        <div class="gallery" role="list">
+          <figure role="listitem" aria-label="Bolhas do mar decorativas">
+            <img src="bob e.jpg"
+            class="bubble">
+          </figure>
+          <figure role="listitem" aria-label="Concha estilizada">
+            <img src="bob esponja.jpg"
+            class="shell">
+          </figure>
+          <figure role="listitem" aria-label="Medusa minimalista">
+            <img src="bob.webp"
+              class="jelly">
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTATO -->
+    <section id="contato" class="section section--alt" aria-labelledby="titulo-contato">
+      <div class="container">
+        <h2 id="titulo-contato">Fale com a gente</h2>
+        <form class="form" aria-label="Formulário de contato">
+          <label>
+            <span>Seu nome</span>
+            <input type="text" name="nome" autocomplete="name" required />
+          </label>
+          <label>
+            <span>E-mail</span>
+            <input type="email" name="email" autocomplete="email" required />
+          </label>
+          <label>
+            <span>Mensagem</span>
+            <textarea name="mensagem" rows="4" required></textarea>
+          </label>
+          <button class="btn" type="submit">Enviar</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <p>Feito com 💛 direto da Fenda do Biquíni. Este é um site fã, não oficial.</p>
+    </div>
+  </footer>
+
+  <!-- Botão & Painel de Acessibilidade (com SVG do Bob embutido) -->
+  <button
+    id="accessBtn"
+    class="access-btn"
+    aria-label="Abrir menu de acessibilidade"
+    aria-haspopup="true"
+    aria-controls="accessPanel"
+    aria-expanded="false"
+  >
+    <!-- SVG simples e estilizado do Bob (embutido para não precisar de arquivo externo) -->
+    <svg role="img" aria-label="Bob Esponja" width="40" height="40" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" focusable="false">
+      <title>Bob Esponja</title>
+      <!-- corpo amarelo com textura simples -->
+      <rect x="4" y="8" width="56" height="48" rx="6" ry="6" fill="#ffdf35" />
+      <!-- olhos -->
+      <ellipse cx="26" cy="26" rx="6" ry="8" fill="#fff"/>
+      <ellipse cx="38" cy="26" rx="6" ry="8" fill="#fff"/>
+      <circle cx="26" cy="27" r="2.2" fill="#000"/>
+      <circle cx="38" cy="27" r="2.2" fill="#000"/>
+      <!-- boca sorrindo -->
+      <path d="M20 40 C 26 46, 38 46, 44 40" stroke="#7a2b00" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+      <!-- bochechas levemente rosadas -->
+      <circle cx="18" cy="34" r="2.6" fill="#ffb3c6" opacity="0.9"/>
+      <circle cx="46" cy="34" r="2.6" fill="#ffb3c6" opacity="0.9"/>
+      <!-- algumas bolinhas/textura da esponja -->
+      <circle cx="12" cy="14" r="1.8" fill="#ffd84d" opacity="0.9"/>
+      <circle cx="48" cy="18" r="1.6" fill="#ffd84d" opacity="0.9"/>
+      <circle cx="32" cy="48" r="2" fill="#ffd84d" opacity="0.9"/>
+    </svg>
+  </button>
+
+  <div id="accessPanel" class="access-panel" role="dialog" aria-modal="false" aria-label="Menu de acessibilidade">
+    <div class="access-row">
+      <span class="access-title">Tamanho da fonte</span>
+      <div class="access-actions">
+        <button class="chip" data-action="font-dec" aria-label="Diminuir fonte">A-</button>
+        <button class="chip" data-action="font-reset" aria-label="Redefinir fonte">A</button>
+        <button class="chip" data-action="font-inc" aria-label="Aumentar fonte">A+</button>
+      </div>
+    </div>
+    <div class="access-row">
+      <span class="access-title">Contraste</span>
+      <div class="access-actions">
+        <button class="chip" data-action="contrast-toggle" aria-pressed="false">Alto contraste</button>
+      </div>
+    </div>
+    <div class="access-row">
+      <span class="access-title">Animações</span>
+      <div class="access-actions">
+        <button class="chip" data-action="motion-toggle" aria-pressed="false">Reduzir animações</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    (function () {
+      const html = document.documentElement;
+      const body = document.body;
+      const accessBtn = document.getElementById('accessBtn');
+      const panel = document.getElementById('accessPanel');
+      const chips = panel.querySelectorAll('.chip');
+
+      // Estado persistido
+      const state = {
+        fontScale: parseFloat(localStorage.getItem('fontScale')) || 1,
+        contrast: localStorage.getItem('contrast') === 'true',
+        reduceMotion: localStorage.getItem('reduceMotion') === 'true'
+      };
+
+      function applyState() {
+        html.style.setProperty('--font-scale', state.fontScale);
+        body.classList.toggle('high-contrast', state.contrast);
+        body.classList.toggle('reduce-motion', state.reduceMotion);
+        // Atualiza aria-pressed nos chips relevantes
+        panel.querySelector('[data-action="contrast-toggle"]').setAttribute('aria-pressed', String(state.contrast));
+        panel.querySelector('[data-action="motion-toggle"]').setAttribute('aria-pressed', String(state.reduceMotion));
+      }
+
+      function saveState() {
+        localStorage.setItem('fontScale', state.fontScale);
+        localStorage.setItem('contrast', state.contrast);
+        localStorage.setItem('reduceMotion', state.reduceMotion);
+      }
+
+      // Ações
+      function handleAction(action) {
+        switch (action) {
+          case 'font-inc':
+            state.fontScale = Math.min(1.6, +(state.fontScale + 0.1).toFixed(2));
+            break;
+          case 'font-dec':
+            state.fontScale = Math.max(0.85, +(state.fontScale - 0.1).toFixed(2));
+            break;
+          case 'font-reset':
+            state.fontScale = 1;
+            break;
+          case 'contrast-toggle':
+            state.contrast = !state.contrast;
+            break;
+          case 'motion-toggle':
+            state.reduceMotion = !state.reduceMotion;
+            break;
+        }
+        applyState();
+        saveState();
+      }
+
+      accessBtn.addEventListener('click', (e) => {
+        const open = panel.classList.toggle('open');
+        accessBtn.setAttribute('aria-expanded', String(open));
+        if (open) {
+          // Foco no primeiro controle
+          const firstChip = panel.querySelector('.chip');
+          firstChip && firstChip.focus();
+        } else {
+          accessBtn.focus();
+        }
+        // evitar que clique feche imediatamente por clique fora
+        e.stopPropagation();
+      });
+
+      // Fechar com ESC
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && panel.classList.contains('open')) {
+          panel.classList.remove('open');
+          accessBtn.setAttribute('aria-expanded', 'false');
+          accessBtn.focus();
+        }
+      });
+
+      // Clique fora fecha
+      document.addEventListener('click', (e) => {
+        if (!panel.contains(e.target) && !accessBtn.contains(e.target)) {
+          panel.classList.remove('open');
+          accessBtn.setAttribute('aria-expanded', 'false');
+        }
+      });
+
+      // Delegação para chips
+      panel.addEventListener('click', (e) => {
+        const btn = e.target.closest('.chip');
+        if (!btn) return;
+        const action = btn.getAttribute('data-action');
+        handleAction(action);
+      });
+
+      // Aplicar estado inicial
+      applyState();
+    })();
+  </script>
+</body>
+</html>
